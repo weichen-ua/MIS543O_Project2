@@ -5,7 +5,7 @@ import subprocess
 import time
 
 import Checksum
-from tests import BasicTest, RandomDropTest, RandomCorruptTest, DelayTest, RandomDuplicateTest
+from tests import BasicTest, RandomDropTest, RandomCorruptTest
 
 """
 Add the tests you want to run here. Don't modify anything outside this function!
@@ -17,10 +17,7 @@ forwarder, so they will magically run.
 def tests_to_run(forwarder):
 	# BasicTest.BasicTest(forwarder, "README")
 	# RandomDropTest.RandomDropTest(forwarder, "README")
-	# RandomCorruptTest.RandomCorruptTest(forwarder, "README")
-	# DelayTest.DelayTest(forwarder, "README")
-	RandomDuplicateTest.RandomDuplicateTest(forwarder, "README")
-
+	RandomCorruptTest.RandomCorruptTest(forwarder, "README")
 
 
 """
