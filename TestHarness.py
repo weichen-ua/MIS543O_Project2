@@ -15,9 +15,9 @@ you want to run. The tests automatically register themselves with the
 forwarder, so they will magically run.
 """
 def tests_to_run(forwarder):
-	# BasicTest.BasicTest(forwarder, "README")
+	BasicTest.BasicTest(forwarder, "README")
 	# RandomDropTest.RandomDropTest(forwarder, "README")
-	RandomCorruptTest.RandomCorruptTest(forwarder, "README")
+	# RandomCorruptTest.RandomCorruptTest(forwarder, "README")
 
 
 """
