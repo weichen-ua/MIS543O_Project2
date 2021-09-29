@@ -13,7 +13,7 @@ create your own.
 class RandomCorruptTest(BasicTest):
     def handle_packet(self):
         for p in self.forwarder.in_queue:
-            if random.choice([True, False]):
+            if random.choice([True, False]) and p.address == self.forwarder.sender_addr:
                 p.checksum = "whatever!@#$%^"
             self.forwarder.out_queue.append(p)
 
