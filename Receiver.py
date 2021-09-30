@@ -30,7 +30,7 @@ class Connection():
 					del self.seqnums[n]
 				else:
 					break # when we find out of order seqno, quit and move on
-		# time.sleep(0.3)
+		time.sleep(0.3)
 
 		if self.debug:
 			print("next seqno should be %d" % (self.current_seqno+1))
