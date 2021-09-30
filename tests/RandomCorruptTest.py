@@ -14,7 +14,7 @@ class RandomCorruptTest(BasicTest):
     def handle_packet(self):
         for p in self.forwarder.in_queue:
             if random.choice([True, False]):
-                p.update_packet(data="whatever!@#$%^")
+                p.checksum="whatever!@#$%^"
             self.forwarder.out_queue.append(p)
 
         # empty out the in_queue
